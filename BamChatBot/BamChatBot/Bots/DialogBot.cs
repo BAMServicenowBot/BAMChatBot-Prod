@@ -69,8 +69,8 @@ namespace BamChatBot.Bots
 		protected override async Task OnConversationUpdateActivityAsync(ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
 		{
 			//test
-			var rpaService = new RPAService();
-			rpaService.SaveUser(new User { u_user = "f8e33eb11b94b384dbc4c91e1e4bcb9b", u_conversation_id = turnContext.Activity.Conversation.Id });
+			/*var rpaService = new RPAService();
+			rpaService.SaveUser(new User { u_user = "f8e33eb11b94b384dbc4c91e1e4bcb9b", u_conversation_id = turnContext.Activity.Conversation.Id });*/
 			//test
 
 			await base.OnConversationUpdateActivityAsync(turnContext, cancellationToken);
